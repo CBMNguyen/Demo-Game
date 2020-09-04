@@ -1,0 +1,86 @@
+#wrapper{
+    position: relative;
+    margin: 60px auto;
+    max-width: 500px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: greenyellow;
+}
+
+#countDown{
+    position: absolute;
+    text-align: center;
+    left: 46.5%;
+    top: 10%;
+}
+
+.scale{
+    transform: scale(1.5);
+}
+
+.headingTitle{
+    margin-top: 150px;
+    text-align: center;
+}
+
+#startBtn{
+    display: block;
+    margin: 100px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    outline: none;
+    transition: all 1s;
+}
+
+#startBtn:hover{
+    transform: scale(1.2);
+    background-color: hotpink;
+    border-top-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    cursor: pointer;
+}
+
+#answers{
+    width: 85%;
+    margin: 170px auto;
+}
+
+#question{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: powderblue;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+#answer_0,#answer_1,#answer_2, #answer_3{
+    width: 80%;
+    margin: 10px auto;
+    background-color: rgb(230, 213, 176);
+    border: 2px solid palevioletred;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.blink {
+    -webkit-animation: blink 1s infinite;  /* Safari 4+ */
+    -moz-animation: blink 1s infinite;  /* Fx 5+ */
+    -o-animation: blink 1s infinite;  /* Opera 12+ */
+    animation: blink 1s infinite;  /* IE 10+, Fx 29+ */
+  }
+  
+  @-webkit-keyframes blink {
+    0%, 49% {
+      background-color: rgba(73, 158, 24, 0.8);
+      border: 1px solid white;
+    }
+    50%, 100% {
+      background-color: rgb(35, 83, 7);
+      border: 1px solid white;
+    }
+  }
